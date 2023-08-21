@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/CreateHabitForm.dart';
 import '../widgets/CustomTextFieldDesign.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,7 +11,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   TextEditingController habitTextController = TextEditingController();
   TextEditingController habitTimeController = TextEditingController();
 
@@ -26,18 +26,18 @@ class _HomePageState extends State<HomePage> {
 
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 137, 214, 249),
+      //backgroundColor: const Color.fromARGB(255, 137, 214, 249),
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text('Habits App'),
+        backgroundColor: Colors.lightBlueAccent,
+        title: const Text('Habits App', style: TextStyle(color: Colors.white)),
       ),
-      body: Column(
-        children: [
-          CustomTextFieldDesign(controllerToUse: habitTextController, textFieldHint: 'Habit', textFieldLabelText: 'Describe the habit',),
-        ],
+      body: CreateHabitForm(
+        habitTextController: habitTextController,
+        habitTimeController: habitTimeController,
       ),
     );
   }

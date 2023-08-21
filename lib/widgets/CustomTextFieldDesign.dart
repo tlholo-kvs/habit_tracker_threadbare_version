@@ -23,11 +23,11 @@ class _CustomTextFieldDesignState extends State<CustomTextFieldDesign> {
       decoration: InputDecoration(
         border: InputBorder.none,
         enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(width: 4, color: Colors.grey,),
+          borderSide: const BorderSide(width: 4, color: Colors.white,),
           borderRadius: BorderRadius.circular(50.0),
         ),
           focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(width: 4, color: Colors.white,),
+          borderSide: const BorderSide(width: 4, color: Colors.lightBlueAccent,),
           borderRadius: BorderRadius.circular(50.0),
         ),
         hintText: widget.textFieldHint,
