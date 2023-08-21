@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/CustomTextFieldDesign.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -34,9 +36,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          TextField(
-            controller: habitTextController,
-          ),
+          CustomTextFieldDesign(controllerToUse: habitTextController, textFieldHint: 'Habit', textFieldLabelText: 'Describe the habit',),
         ],
       ),
     );
