@@ -33,6 +33,9 @@ class CreateHabitForm extends StatelessWidget {
           ),
         ),
         ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.lightBlueAccent,
+          ),
           onPressed: () {},
           child: const Text("Create habit"),
         ),
