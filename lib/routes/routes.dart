@@ -6,6 +6,8 @@ class MyRoutes {
   static const homePage = "/";
   static const homeViewPage = "/homeViewPage";
 
+  MyRoutes._();
+
   static Route<dynamic> generateRoute(RouteSettings settings)
   {
     switch(settings.name){
