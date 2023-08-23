@@ -4,7 +4,7 @@ import 'package:habit_tracker_threadbare_version/pages/HomeView.dart';
 
 class MyRoutes {
   static const homePage = "/";
-  static const homeViewWidget = "/homeViewWidget";
+  static const homeViewPage = "/homeViewPage";
 
   static Route<dynamic> generateRoute(RouteSettings settings)
   {
@@ -12,7 +12,7 @@ class MyRoutes {
       case homePage:
         return MaterialPageRoute(builder: (context) => const HomePage());
 
-      case homeViewWidget:
+      case homeViewPage:
         return MaterialPageRoute(builder: (context) => const HomeView());
 
       default:
