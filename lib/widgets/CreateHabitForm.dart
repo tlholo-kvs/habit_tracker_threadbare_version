@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habit_tracker_threadbare_version/routes/routes.dart';
 
 import 'CustomTextFieldDesign.dart';
 
@@ -36,7 +37,14 @@ class CreateHabitForm extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.lightBlueAccent,
           ),
-          onPressed: () {},
+          onPressed: () {
+            if(habitTimeController.text.isNotEmpty && habitTextController.text.isNotEmpty)
+            {
+              Navigator.pushNamed(context, MyRoutes.homeViewPage);
+            } else {
+
+            }
+          },
           child: const Text("Create habit"),
         ),
       ],
